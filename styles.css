@@ -1,0 +1,448 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    transition: all ease-in 0.3s;
+}
+
+html{
+    width: 1440px;
+    text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 247, 247, 0.712);
+    color: rgb(56, 56, 56);
+}
+
+header{
+    height: 100vh;
+}
+/* ===================================================== */
+
+.navigation{
+    height: 80px;
+    display: inline-block;
+}
+
+.navigation #logo{
+    color: rgb(56, 56, 56);
+    text-decoration: none;
+    float: left;
+    font-size: 24px;
+    margin-left: 150px;
+    margin-top: 35px;
+}
+
+.navigation img{
+    width: 6%;
+    margin-left: 150px;
+    margin-top: 25px;
+
+}
+
+.navigation ul{
+    float: right;
+    margin-top: 30px;
+    margin-left: 548px;
+}
+.navigation ul li{
+    list-style-type: none;
+    text-transform: capitalize;
+    display: inline-block;
+    padding: 20px;
+    font-size: 17px;
+    transition: 0.3s ease-in-out;
+}
+
+.navigation ul li a{
+    color: rgb(56, 56, 56);
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+.navigation ul li a:hover{
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+}
+
+#active{
+    font-weight: 700;
+    transition: 0.3s ease-in-out;
+}
+/* ----------------------------------------------------------- */
+
+.hero-section
+{
+    position: absolute;
+    top: 35%;
+    left: 10%;
+}
+
+.introduction{
+    width: 600px;
+    float: left;
+}
+.introduction #name{
+    color: rgb(56, 56, 56);
+}
+
+.introduction h2{
+    color: hsla(0, 0%, 22%, 0.85);
+    font-size: 48px;
+}
+.introduction h1{
+    font-size: 64px;
+    text-transform: capitalize;
+}
+
+.see-work{
+    margin-top: 20px;
+    outline: 1px solid rgb(56, 56, 56);
+    border-radius: 50px;
+    width: 300px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.see-work a{
+    color: rgb(56, 56, 56);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 19px;
+    letter-spacing: 1px;
+    transition: all ease-in-out 0.2s;
+    
+}
+
+.see-work a:hover{
+    font-weight: 500;
+    letter-spacing: 2px;
+    transition: all ease-in-out 0.2s;
+}
+
+.person
+{
+    float: right;
+    margin-left: 70px;
+    
+}
+
+.person .background{
+    background-color: rgb(56, 56, 56);
+    width: 350px;
+    height: 400px;
+    margin-top: -100px;
+}
+
+.image-person img{
+    width: 355px;
+   
+    margin-left: 55px;
+    margin-top: -300px;
+}
+/* ----------------------------------------------------------- */
+
+.about-me .about-top-line{
+    background-color: rgb(56, 56, 56);
+    width: 100px;
+    height: 50px;
+    margin-left: 160px;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+    box-shadow: 2px 2px 8px rgba(56, 56, 56, 0.5);
+}
+
+.about-me h1{
+    font-size: 54px;
+    text-transform: capitalize;
+    margin-left: 160px;
+    width: 300px;
+}
+
+.about-me-text{
+    width: 800px;
+    height: 200px;
+    outline:2px solid rgba(56, 56, 56, 0.85);
+    box-shadow: 2px 2px rgba(56, 56, 56, 0.85);
+    margin: 100px 28%;
+    position: relative;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+  
+}
+
+.about-me-text p{
+    width: 600px;
+    line-height: 30px;
+    text-align: justify;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.about-me{
+    height: 90vh;
+}
+/* ------------------------------------------------------ */
+
+.my-work{
+    /* margin-top: 150px; */
+    /* margin-bottom: 100px; */
+    height: 80vh;
+}
+
+.my-work .work-top-line{
+    background-color: rgb(56, 56, 56);
+    width: 300px;
+    height: 50px;
+    margin-left: 160px;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+    box-shadow: 2px 2px 8px rgba(56, 56, 56, 0.5);
+   
+}
+
+.my-work h1{
+    font-size: 64px;
+    text-transform: capitalize;
+    margin-left: 160px;
+}
+
+.work-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin-left: 160px;
+    /* margin-top: 40px; */
+    /* margin-bottom: 100px; */
+}
+
+.card{
+    background-color: rgb(56, 56, 56);
+    width: 350px;
+    height: 400px;
+    box-shadow: 4px 5px 20px rgb(56, 56, 56);
+    margin-top: 80px;
+}
+
+.card h2{
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 45%;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    font-size: 28px;
+}
+
+.card-button{
+    background-color: whitesmoke;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 22%;
+    margin-top: 30%;
+}
+
+.card .line{
+    height: 20px;
+    width: 100px;
+    background-color: whitesmoke;
+}
+
+.card-button a{
+    color: rgb(56, 56, 56);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 21px;
+    transition: all ease-in 0.1s;
+}
+
+.card-button a:hover{
+    font-weight: 700;
+    transition: all ease-in 0.1s;
+}
+/* ---------------------------------------------------- */
+
+
+.contact-top-line
+{
+    background-color: rgb(56, 56, 56);
+    width: 600px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 32.5%;
+    margin-top: 10%;
+    border-radius: 50px;
+    box-shadow: 2px 2px 8px rgba(56, 56, 56, 0.5);
+}
+
+.contact-me h1{
+    text-align: center;
+    font-size: 54px;
+    text-transform: capitalize;
+    margin-top: 20px;
+    margin-left: 100px;
+}
+
+.form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 30px; */
+    height: 60vh;
+}
+
+.form-container label{
+    color: rgb(56, 56, 56);
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-top: 10px;
+
+}
+
+.form-container input{
+    width: 400px;
+    height: 40px;
+    margin: 10px;
+    border:none;
+    box-shadow: 2px 2px 8px rgba(56, 56, 56, 0.5);
+    padding-left: 20px;
+    font-size: 18px;
+}
+
+.form-container #name{
+    margin-left: 115px;
+}
+
+.form-container #email{
+    margin-left: 115px;
+}
+
+.form-container #message{
+    width: 400px;
+    padding-left: 20px;
+    margin-left: 115px;
+    padding-top: 20px;
+    margin-top: 20px;
+    border: none;
+    font-size: 18px;
+    box-shadow: 2px 2px 8px rgba(56, 56, 56, 0.5);
+}
+
+/* .form-container button{
+    background-color: rgb(56, 56, 56);
+    width: 400px;
+    height: 50px;
+    border: none;
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    margin-left: 115px;
+    margin-top: 20px;
+    margin-bottom: 80px;
+} */
+.form-container .button{
+    background-color: rgb(56, 56, 56);
+    width: 400px;
+    height: 50px;
+    border: none;
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    margin-left: 115px;
+    margin-top: 10px;
+    padding-top: 5px;
+    margin-bottom: 80px;
+    text-decoration: none;
+
+}
+.form-container .button:hover{
+    cursor: pointer;
+}
+
+.form-container .button a{
+    background-color: rgb(56, 56, 56);
+    width: 400px;
+    height: 50px;
+    border: none;
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    margin-left: 145px;
+    margin-top: 30px;
+    margin-bottom: 80px;
+    text-decoration: none;
+    
+ 
+}
+
+.form-container button:hover{
+    cursor: pointer;
+}
+
+hr{
+    width: 100%;
+    margin-left: 80px;
+}
+/* ------------------------------------------- */
+
+.social-media h1{
+    text-transform: uppercase;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-left: 80px;
+
+}
+
+.copyright{
+    margin-left: 115px;
+    text-align: center;
+    text-transform: capitalize;
+}
+/* --------------------------------------------------- */
+.footer h1{
+    text-align: center;
+    text-transform:uppercase;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+.footer a{
+    color: rgb(56, 56, 56);
+    padding: 20px;
+    margin-top: 30px;
+    text-decoration: none;
+}
+
+.footer .icons{
+    text-align: center;
+    padding: 20px;
+    margin-left: 100px;
+}   
